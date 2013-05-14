@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="meinziel.js"></script>
+</head>
+<body>
+<div id="meinziel"></div>
+<script>
+    $(function(){
+        //new MeinZiel('#meinziel');
+        $.getJSON('data.json', function(data) {
+            var test = new Question(data).show();
+        });
+    });
+</script>
+</body>
+</html>

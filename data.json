@@ -2,29 +2,29 @@
     "question": "Was ist ihr Ziel?",
     "choices": [
         {
-            "name": "Laufen",
+            "choice": "Laufen",
             "question": {
                 "question": "Suchen Sie ein Produkt für?",
                 "choices": [
                     {
-                        "name": "Vor und während der Belastung",
+                        "choice": "Vor und während der Belastung",
                         "question": {
                             "question": "Wie sieht ihr Training aus?",
                             "choices": [
                                 {
-                                    "name": "Vorwiegend lockere Ausdauerläufe",
+                                    "choice": "Vorwiegend lockere Ausdauerläufe",
                                     "answer": "Kaufen die produkt A"
                                 },
                                 {
-                                    "name": "Intensive Interfallläufe",
+                                    "choice": "Intensive Interfallläufe",
                                     "answer": "Kaufen die produkt A"
                                 },
                                 {
-                                    "name": "Krafttraining",
+                                    "choice": "Krafttraining",
                                     "answer": "Kaufen die produkt A"
                                 },
                                 {
-                                    "name": "Ich suche etwas für den Wettkampf",
+                                    "choice": "Ich suche etwas für den Wettkampf",
                                     "answer": "Kaufen die produkt A"
                                 }
                             ]
@@ -34,29 +34,29 @@
             }
         },
         {
-            "name": "Triathlon",
+            "choice": "Triathlon",
             "question": {
                 "question": "Suchen Sie ein Produkt für?",
                 "choices": [
                     {
-                        "name": "Vor und während der Belastung",
+                        "choice": "Vor und während der Belastung",
                         "question": {
                             "question": "Wie sieht ihr Training aus?",
                             "choices": [
                                 {
-                                    "name": "Vorwiegend lockere Ausdauerläufe",
+                                    "choice": "Vorwiegend lockere Ausdauerläufe",
                                     "answer": "Kaufen die produkt A"
                                 },
                                 {
-                                    "name": "Intensive Interfallläufe",
+                                    "choice": "Intensive Interfallläufe",
                                     "answer": "Kaufen die produkt A"
                                 },
                                 {
-                                    "name": "Krafttraining",
+                                    "choice": "Krafttraining",
                                     "answer": "Kaufen die produkt A"
                                 },
                                 {
-                                    "name": "Ich suche etwas für den Wettkampf",
+                                    "choice": "Ich suche etwas für den Wettkampf",
                                     "answer": "Kaufen die produkt A"
                                 }
                             ]
@@ -66,29 +66,29 @@
             }
         },
         {
-            "name": "Rennradfahren",
+            "choice": "Rennradfahren",
             "question": {
                 "question": "Suchen Sie ein Produkt für?",
                 "choices": [
                     {
-                        "name": "Vor und während der Belastung",
+                        "choice": "Vor und während der Belastung",
                         "question": {
                             "question": "Wie sieht ihr Training aus?",
                             "choices": [
                                 {
-                                    "name": "Vorwiegend lockere Ausdauerläufe",
+                                    "choice": "Vorwiegend lockere Ausdauerläufe",
                                     "answer": "Kaufen die produkt A"
                                 },
                                 {
-                                    "name": "Intensive Interfallläufe",
+                                    "choice": "Intensive Interfallläufe",
                                     "answer": "Kaufen die produkt A"
                                 },
                                 {
-                                    "name": "Krafttraining",
+                                    "choice": "Krafttraining",
                                     "answer": "Kaufen die produkt A"
                                 },
                                 {
-                                    "name": "Ich suche etwas für den Wettkampf",
+                                    "choice": "Ich suche etwas für den Wettkampf",
                                     "answer": "Kaufen die produkt A"
                                 }
                             ]
@@ -98,29 +98,29 @@
             }
         },
         {
-            "name": "Outdoor",
+            "choice": "Outdoor",
             "question": {
                 "question": "Suchen Sie ein Produkt für?",
                 "choices": [
                     {
-                        "name": "Vor und während der Belastung",
+                        "choice": "Vor und während der Belastung",
                         "question": {
                             "question": "Wie sieht ihr Training aus?",
                             "choices": [
                                 {
-                                    "name": "Vorwiegend lockere Ausdauerläufe",
+                                    "choice": "Vorwiegend lockere Ausdauerläufe",
                                     "answer": "Kaufen die produkt A"
                                 },
                                 {
-                                    "name": "Intensive Interfallläufe",
+                                    "choice": "Intensive Interfallläufe",
                                     "answer": "Kaufen die produkt A"
                                 },
                                 {
-                                    "name": "Krafttraining",
+                                    "choice": "Krafttraining",
                                     "answer": "Kaufen die produkt A"
                                 },
                                 {
-                                    "name": "Ich suche etwas für den Wettkampf",
+                                    "choice": "Ich suche etwas für den Wettkampf",
                                     "answer": "Kaufen die produkt A"
                                 }
                             ]
