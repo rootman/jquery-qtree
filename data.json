@@ -1,0 +1,133 @@
+{
+    "question": "Was ist ihr Ziel?",
+    "choices": [
+        {
+            "name": "Laufen",
+            "question": {
+                "question": "Suchen Sie ein Produkt für?",
+                "choices": [
+                    {
+                        "name": "Vor und während der Belastung",
+                        "question": {
+                            "question": "Wie sieht ihr Training aus?",
+                            "choices": [
+                                {
+                                    "name": "Vorwiegend lockere Ausdauerläufe",
+                                    "answer": "Kaufen die produkt A"
+                                },
+                                {
+                                    "name": "Intensive Interfallläufe",
+                                    "answer": "Kaufen die produkt A"
+                                },
+                                {
+                                    "name": "Krafttraining",
+                                    "answer": "Kaufen die produkt A"
+                                },
+                                {
+                                    "name": "Ich suche etwas für den Wettkampf",
+                                    "answer": "Kaufen die produkt A"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Triathlon",
+            "question": {
+                "question": "Suchen Sie ein Produkt für?",
+                "choices": [
+                    {
+                        "name": "Vor und während der Belastung",
+                        "question": {
+                            "question": "Wie sieht ihr Training aus?",
+                            "choices": [
+                                {
+                                    "name": "Vorwiegend lockere Ausdauerläufe",
+                                    "answer": "Kaufen die produkt A"
+                                },
+                                {
+                                    "name": "Intensive Interfallläufe",
+                                    "answer": "Kaufen die produkt A"
+                                },
+                                {
+                                    "name": "Krafttraining",
+                                    "answer": "Kaufen die produkt A"
+                                },
+                                {
+                                    "name": "Ich suche etwas für den Wettkampf",
+                                    "answer": "Kaufen die produkt A"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Rennradfahren",
+            "question": {
+                "question": "Suchen Sie ein Produkt für?",
+                "choices": [
+                    {
+                        "name": "Vor und während der Belastung",
+                        "question": {
+                            "question": "Wie sieht ihr Training aus?",
+                            "choices": [
+                                {
+                                    "name": "Vorwiegend lockere Ausdauerläufe",
+                                    "answer": "Kaufen die produkt A"
+                                },
+                                {
+                                    "name": "Intensive Interfallläufe",
+                                    "answer": "Kaufen die produkt A"
+                                },
+                                {
+                                    "name": "Krafttraining",
+                                    "answer": "Kaufen die produkt A"
+                                },
+                                {
+                                    "name": "Ich suche etwas für den Wettkampf",
+                                    "answer": "Kaufen die produkt A"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Outdoor",
+            "question": {
+                "question": "Suchen Sie ein Produkt für?",
+                "choices": [
+                    {
+                        "name": "Vor und während der Belastung",
+                        "question": {
+                            "question": "Wie sieht ihr Training aus?",
+                            "choices": [
+                                {
+                                    "name": "Vorwiegend lockere Ausdauerläufe",
+                                    "answer": "Kaufen die produkt A"
+                                },
+                                {
+                                    "name": "Intensive Interfallläufe",
+                                    "answer": "Kaufen die produkt A"
+                                },
+                                {
+                                    "name": "Krafttraining",
+                                    "answer": "Kaufen die produkt A"
+                                },
+                                {
+                                    "name": "Ich suche etwas für den Wettkampf",
+                                    "answer": "Kaufen die produkt A"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
