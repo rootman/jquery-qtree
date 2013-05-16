@@ -1,0 +1,3 @@
+[submodule "jquery-qtree"]
+	path = jquery-qtree
+	url = git://github.com/rootman/jquery-qtree.git

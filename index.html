@@ -14,6 +14,50 @@
     <![endif]-->
 
     <title>Jquery-qtree by rootman</title>
+    <style>
+        .qtree-question, .qtree-answer  {
+            background-color: #eee;
+            color: #555;
+            padding: 20px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            width: 400px;
+            margin-bottom: 20px;
+            webkit-box-shadow: 0px 0px 3px rgba(50, 50, 50, 0.6);
+            -moz-box-shadow:    0px 0px 3px rgba(50, 50, 50, 0.6);
+            box-shadow:         0px 0px 3px rgba(50, 50, 50, 0.6);
+        }
+
+        .qtree-question {
+
+        }
+
+        .qtree-answer {
+
+        }
+
+        .qtree-question select {
+            padding: 5px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            border-color: #aaa;
+            display: block;
+            width: 100%;
+        }
+
+        .qtree-question h4 {
+            color: #555;
+            margin: 0;
+            margin-bottom: 5px;
+        }
+
+        .qtree-question h4:before {
+            content: '';
+            margin: 0;
+        }
+    </style>
   </head>
 
   <body>
@@ -29,8 +73,12 @@
       <div class="inner clearfix">
         <section id="main-content">
           <h1>jQuery QTree</h1>
+            <h4>Question and answer tree for jQuery</h4>
 
-<h4>Question and answer tree for jQuery</h4>
+<h2>Demo</h2>
+<div id="qtree"></div>
+
+
 
 <h2>Usage</h2>
 
@@ -66,6 +114,7 @@
                         <span class="s2">"choice"</span><span class="o">:</span> <span class="s2">"Sure Do!"</span><span class="p">,</span>
                         <span class="s2">"question"</span><span class="o">:</span> <span class="p">{</span>
                             <span class="s2">"question"</span><span class="o">:</span> <span class="s2">"Here it goes. Is it the last question?"</span><span class="p">,</span>
+                            <span class="s2">"default"</span><span class="o">:</span> <span class="s2">"Please choose"</span><span class="p">,</span>
                             <span class="s2">"choices"</span><span class="o">:</span> <span class="p">[</span>
                                 <span class="p">{</span>
                                     <span class="s2">"choice"</span><span class="o">:</span> <span class="s2">"Guess it is"</span><span class="p">,</span>
@@ -121,6 +170,65 @@
         </aside>
       </div>
     </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="jquery-qtree/jquery.qtree.js"></script>
+    <script>
+
+        var data = {
+            "question": "This is the first question, right?",
+            "default": "Please choose",
+            "choices": [
+                {
+                    "choice": "Sure is!",
+                    "question": {
+                        "question": "Do you want another question?",
+                        "default": "Please choose",
+                        "choices": [
+                            {
+                                "choice": "Sure Do!",
+                                "question": {
+                                    "question": "Here it goes. Is it the last question?",
+                                    "default": "Please choose",
+                                    "choices": [
+                                        {
+                                            "choice": "Guess it is",
+                                            "answer": "Spot on!"
+                                        },
+                                        {
+                                            "choice": "I think there is another one",
+                                            "answer": "No, you were wrong. No other question for you my friend."
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "choice": "NO",
+                    "question": {
+                        "question": "You know, it was the first question, right?",
+                        "default": "Please choose",
+                        "choices": [
+                            {
+                                "choice": "Yes sure...",
+                                "answer": "Okay, fair enough..."
+                            }
+                        ]
+                    }
+                },
+                {
+                    "choice": "Maybe",
+                    "answer": "Not very decisive are you?"
+                }
+            ]
+        }
+
+        $(function(){
+            $('#qtree').qtree({data: data});
+        });
+    </script>
 
   
   </body>
