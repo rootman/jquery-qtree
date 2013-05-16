@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Jquery-qtree by rootman</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Jquery-qtree</h1>
+        <h2>Questiontree plugin for jQuery</h2>
+        <a href="https://github.com/rootman/jquery-qtree" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>jQuery QTree</h1>
+
+<h4>Question and answer tree for jQuery</h4>
+
+<h2>Usage</h2>
+
+<p>Just include the script after including jQuery.</p>
+
+<div class="highlight"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">'jquery.js'</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">'jquery.qtree.js'</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+<p>Create a parent element in your HTML markup</p>
+
+<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"qtree"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></div>
+
+<p>Initialize qtree</p>
+
+<div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#qtree'</span><span class="p">).</span><span class="nx">qtree</span><span class="p">({</span><span class="nx">data</span><span class="o">:</span> <span class="nx">data</span><span class="p">});</span>
+</pre></div>
+
+<p>data is the source data object</p>
+
+<div class="highlight"><pre><span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"question"</span><span class="o">:</span> <span class="s2">"This is the first question, right?"</span><span class="p">,</span>
+    <span class="s2">"default"</span><span class="o">:</span> <span class="s2">"Please choose"</span><span class="p">,</span>
+    <span class="s2">"choices"</span><span class="o">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">"choice"</span><span class="o">:</span> <span class="s2">"Sure is!"</span><span class="p">,</span>
+            <span class="s2">"question"</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s2">"question"</span><span class="o">:</span> <span class="s2">"Do you want another question?"</span><span class="p">,</span>
+                <span class="s2">"default"</span><span class="o">:</span> <span class="s2">"Please choose"</span><span class="p">,</span>
+                <span class="s2">"choices"</span><span class="o">:</span> <span class="p">[</span>
+                    <span class="p">{</span>
+                        <span class="s2">"choice"</span><span class="o">:</span> <span class="s2">"Sure Do!"</span><span class="p">,</span>
+                        <span class="s2">"question"</span><span class="o">:</span> <span class="p">{</span>
+                            <span class="s2">"question"</span><span class="o">:</span> <span class="s2">"Here it goes. Is it the last question?"</span><span class="p">,</span>
+                            <span class="s2">"choices"</span><span class="o">:</span> <span class="p">[</span>
+                                <span class="p">{</span>
+                                    <span class="s2">"choice"</span><span class="o">:</span> <span class="s2">"Guess it is"</span><span class="p">,</span>
+                                    <span class="s2">"answer"</span><span class="o">:</span> <span class="s2">"Spot on!"</span>
+                                <span class="p">},</span>
+                                <span class="p">{</span>
+                                    <span class="s2">"choice"</span><span class="o">:</span> <span class="s2">"I think there is another one"</span><span class="p">,</span>
+                                    <span class="s2">"answer"</span><span class="o">:</span> <span class="s2">"No, you were wrong. No other question for you my friend."</span>
+                                <span class="p">}</span>
+                            <span class="p">]</span>
+                        <span class="p">}</span>
+                    <span class="p">}</span>
+                <span class="p">]</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">"choice"</span><span class="o">:</span> <span class="s2">"NO"</span><span class="p">,</span>
+            <span class="s2">"question"</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s2">"question"</span><span class="o">:</span> <span class="s2">"You know, it was the first question, right?"</span><span class="p">,</span>
+                <span class="s2">"default"</span><span class="o">:</span> <span class="s2">"Please choose"</span><span class="p">,</span>
+                <span class="s2">"choices"</span><span class="o">:</span> <span class="p">[</span>
+                    <span class="p">{</span>
+                        <span class="s2">"choice"</span><span class="o">:</span> <span class="s2">"Yes sure..."</span><span class="p">,</span>
+                        <span class="s2">"answer"</span><span class="o">:</span> <span class="s2">"Okay, fair enough..."</span>
+                    <span class="p">}</span>
+                <span class="p">]</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">"choice"</span><span class="o">:</span> <span class="s2">"Maybe"</span><span class="p">,</span>
+            <span class="s2">"answer"</span><span class="o">:</span> <span class="s2">"Not very decisive are you?"</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>This example should be pretty self-explanatory. You can extend the tree indefinitely!</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/rootman/jquery-qtree/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/rootman/jquery-qtree/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/rootman/jquery-qtree"></a> is maintained by <a href="https://github.com/rootman">rootman</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
