@@ -1,0 +1,37 @@
+.qtree-question, .qtree-answer  {
+    background-color: #eee;
+    color: #555;
+    padding: 20px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width: 400px;
+    margin-bottom: 20px;
+    webkit-box-shadow: 0px 0px 3px rgba(50, 50, 50, 0.6);
+    -moz-box-shadow:    0px 0px 3px rgba(50, 50, 50, 0.6);
+    box-shadow:         0px 0px 3px rgba(50, 50, 50, 0.6);
+}
+
+.qtree-question {
+
+}
+
+.qtree-answer {
+
+}
+
+.qtree-question select {
+    padding: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border-color: #aaa;
+    display: block;
+    width: 100%;
+}
+
+.qtree-question h4 {
+    color: #555;
+    margin: 0;
+    margin-bottom: 5px;
+}

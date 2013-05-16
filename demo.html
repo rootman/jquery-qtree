@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link href="jquery.qtree.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="qtree"></div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="jquery.qtree.js"></script>
+<script>
+
+    var data = {
+        "question": "This is the first question, right?",
+        "default": "Please choose",
+        "choices": [
+            {
+                "choice": "Sure is!",
+                "question": {
+                    "question": "Do you want another question?",
+                    "default": "Please choose",
+                    "choices": [
+                        {
+                            "choice": "Sure Do!",
+                            "question": {
+                                "question": "Here it goes. Is it the last question?",
+                                "choices": [
+                                    {
+                                        "choice": "Guess it is",
+                                        "answer": "Spot on!"
+                                    },
+                                    {
+                                        "choice": "I think there is another one",
+                                        "answer": "No, you were wrong. No other question for you my friend."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "choice": "NO",
+                "question": {
+                    "question": "You know, it was the first question, right?",
+                    "default": "Please choose",
+                    "choices": [
+                        {
+                            "choice": "Yes sure...",
+                            "answer": "Okay, fair enough..."
+                        }
+                    ]
+                }
+            },
+            {
+                "choice": "Maybe",
+                "answer": "Not very decisive are you?"
+            }
+        ]
+    }
+
+    $(function(){
+        $('#qtree').qtree({data: data});
+    });
+</script>
+</body>
+</html>
