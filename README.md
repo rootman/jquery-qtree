@@ -1,6 +1,9 @@
 # jQuery QTree
 #### Question and answer tree for jQuery
 
+First of all I didn't know what to call this plugin, so if anyone has a good name for what is going on, feel free to help me out!
+For what it does, checkout the [DEMO](http://rootman.github.io/jquery-qtree/)!
+
 Usage
 -----
 
